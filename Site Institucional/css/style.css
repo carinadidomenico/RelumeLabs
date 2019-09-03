@@ -1,19 +1,24 @@
 /* 141414 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 
 * {
     padding: 0;
     margin: 0;
+}
+
+html {     
     background-color: #141414;
 }
 
 #navbar {
     height: 100px;
+    /* border: 1px solid red; */
 }
 
 .navbar-logo {
-    height: 100px;
-    margin: 20px 20px;
+    height: 90px;
+    margin: 20px 30px;
 }
 
 .navbar-list {
@@ -32,5 +37,75 @@
     text-decoration: none;
     color: white;
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 18px;
 }
+
+#about {
+    height: 100vh;
+    margin-top: 50px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+}
+
+.about-left {
+    width: 50%;
+    text-align: right;
+}
+
+.about-left h1 {
+    background: #fff;
+    color: #141414;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 50px;
+    padding: 0px 123px;
+    display: inline-block;
+}
+
+.about-left p {
+    display: inline-block;
+    width: 550px;
+    margin: 20px 0px;
+    font-size: 18px;
+    font-family: 'Varela Round';
+    color: white;
+    text-align: left;
+}
+
+.about-right {
+    text-align: center;
+    /* border: 1px solid pink; */
+    width: 50%;
+}
+
+.about-right img {
+    height: 400px;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 200px) { 
+    #about {
+        flex-direction: column;
+    }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+ }
