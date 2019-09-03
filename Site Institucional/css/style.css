@@ -1,0 +1,75 @@
+/* 141414 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+#navbar {
+    height: 100px;
+}
+
+.navbar-logo {
+    height: 100px;
+    margin: 20px 20px;
+}
+
+.navbar-list {
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar-list li {
+    display: inline;
+}
+
+.navbar-list li a {
+    margin: 0px 20px;
+    line-height: 100px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+#faq {
+    background-color: #e7e7e7;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.faq-container {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.faq-pergunta {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 5px;
+    margin: inherit;
+
+}
+
+.faq-pergunta p {   
+    color: #141414;
+    margin: 0 20px;
+    align-self: center;
+}
+
+.faq-btn {
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #141414;
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
