@@ -4,7 +4,7 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: #141414;
+    font-family: 'Montserrat';
 }
 
 #navbar {
@@ -34,3 +34,42 @@
     font-family: 'Montserrat';
     font-size: 20px;
 }
+
+#faq {
+    background-color: #e7e7e7;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.faq-container {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.faq-pergunta {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 5px;
+    margin: inherit;
+
+}
+
+.faq-pergunta p {   
+    color: #141414;
+    margin: 0 20px;
+    align-self: center;
+}
+
+.faq-btn {
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #141414;
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
