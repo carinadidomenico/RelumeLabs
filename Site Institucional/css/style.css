@@ -11,6 +11,12 @@ html {
     background-color: #141414;
 }
 
+body {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+/* NAVBAR */
 #navbar {
     height: 100px;
     /* border: 1px solid red; */
@@ -37,20 +43,22 @@ html {
     text-decoration: none;
     color: white;
     font-family: 'Montserrat';
-    font-size: 18px;
+    font-size: 20px;
 }
 
+/* ABOUT */
 #about {
-    height: 100vh;
-    margin-top: 50px;
-    /* border: 1px solid white; */
+    height: 80vh;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
 }
 
 .about-left {
+    height: 100%;
     width: 50%;
     text-align: right;
+    /* border: 1px solid pink; */
 }
 
 .about-left h1 {
@@ -59,53 +67,59 @@ html {
     font-family: 'Montserrat';
     font-weight: 300;
     font-size: 50px;
+    text-align: center;
     padding: 0px 123px;
-    display: inline-block;
 }
 
 .about-left p {
-    display: inline-block;
-    width: 550px;
+    width: 100%;
     margin: 20px 0px;
-    font-size: 18px;
+    text-align: left;
+    line-height: 35px;
+    font-size: 20px;
     font-family: 'Varela Round';
     color: white;
-    text-align: left;
 }
 
 .about-right {
+    height: 100%;
+    width: 50%;
     text-align: center;
     /* border: 1px solid pink; */
-    width: 50%;
 }
 
 .about-right img {
-    height: 400px;
+    height: 30em;
 }
 
-/* // Extra small devices (portrait phones, less than 576px) */
-@media (min-width: 200px) { 
+@media (min-width: 200px) and (max-width: 577.98px){ 
     #about {
         flex-direction: column;
     }
- }
+}
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    
- }
+@media (min-width: 800px) {
+    body {
+        width: 1100px;   
+    }
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    
- }
+    .about-left h1 {
+      padding: 2px 0px;
+      font-size: 45px
+    }
 
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    
- }
+    .about-left p {
+      font-size: 18px;
+    }
 
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    
- }
+    .about-right img {
+      height: 25em;
+    }
+}
+
+@media (min-width: 1290px) {
+  body {
+      width: 1300px;   
+  }
+  
+}
